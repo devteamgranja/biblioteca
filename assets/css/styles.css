@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 a{
     text-decoration: none;
@@ -18,6 +19,7 @@ a{
 }
 body{
     font-family: "Lato", sans-serif;
+    background-color: #F6F6F6;
 }
 .allsite{
     background-color: #F6F6F6;
@@ -29,18 +31,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 .avatar img{
-    /* width: 100%; */
     max-width: 100%;
 }
 .menu{
-    flex:1;
-    /* display: flex; */
+    width: 20%;
     flex-direction: column;
     justify-content: center;
     max-width: 320px;
-    /* height: 100vh ; */
+    height: 100vh ;
+    background-color: rgba(40,50,30,1);
     /* background-color: green; */
     
 }
@@ -66,20 +68,19 @@ body{
 .menu2{
     background: rgb(40,50,30);
 background: linear-gradient(0deg, rgba(40,50,30,1) 0%, rgba(115,164,72,1) 100%);
-    height: calc(100vh - 290px);
+    height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
     width: 100%;
 }
 .menu2 ul{
     margin: 40px auto;
     width: 100%;
-    /* background-color: #FDC200; */
-    /* padding-left: 40px; */
     color: #F6F6F6;
     text-transform: uppercase;
-    
     
 }
 .menutitle{
@@ -103,25 +104,32 @@ background: linear-gradient(0deg, rgba(40,50,30,1) 0%, rgba(115,164,72,1) 100%);
 }
 .logo{
     position: relative;
-    bottom: -55px;
+    bottom: -30px;
 }
 .conteudo{
-    flex:5;
+    width: 80%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background-color: #F6F6F6;
     
 }
+.content{
+    display: flex;
+    width: 100%;
+}
 .ladoesquerdo{
-    /* background-color: red; */
-    flex:1;
+    width: 50%;
     
 }
-.card{
+.ladodireito{
+    width: 50%;
+}
+.card1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: space-around;
     text-transform: uppercase;
     color: #fff;
    
@@ -135,13 +143,13 @@ background: linear-gradient(0deg, rgba(40,50,30,1) 0%, rgba(115,164,72,1) 100%);
     align-items: center;
     /* width: 50%; */
     height: auto;
-    max-width: 319px;
-    max-height: 212px;
+    /* max-width: 319px; */
+    /* max-height: 212px; */
     background-color: #889E74;
-    /* padding: 3px; */
+    
     /* border:solid 1px #777; */
     padding: 10px;
-    margin: 15px;
+    margin: 1px;
     text-align: center;
 }
 .box h3{
@@ -151,11 +159,7 @@ background: linear-gradient(0deg, rgba(40,50,30,1) 0%, rgba(115,164,72,1) 100%);
     display: block;
     font-size: 30px;
 }
-.ladodireito{
-    /* background-color: green; */
-    flex:1;
-    /* background-color: red; */
-}
+
 .ladodireito h1{
     font-size: 66px;
     color:#d0d0d0;
@@ -164,14 +168,33 @@ background: linear-gradient(0deg, rgba(40,50,30,1) 0%, rgba(115,164,72,1) 100%);
 }
 .boxlivros{
     display: flex;
+    flex-direction: column;
 }
 .boxlivro{
     display: flex;
     flex-direction: row;
     padding: 10px;
+    margin: 10px auto;
     background-color: #ffffff;
     /* box-shadow: 0 0 12px #99999904; */
     box-shadow: 13px 34px 28px -24px rgba(224,224,224,1);
+}
+.boxhank{
+    display: flex;
+    flex-direction: row;
+    
+   
+    /* box-shadow: 0 0 12px #99999904; */
+   
+    
+}
+.hankimg{
+    width: auto;
+    padding: 3px;
+    box-shadow: 13px 34px 28px -24px rgb(211, 210, 210);
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px auto;
 }
 .ref{
     padding: 20px;
@@ -180,4 +203,57 @@ background: linear-gradient(0deg, rgba(40,50,30,1) 0%, rgba(115,164,72,1) 100%);
     padding-left: 30px;
     font-size: 33px;
     margin-bottom: 20px;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: #125731;
+}
+.imgrodape{
+    margin-top: 50px;
+}
+
+
+/* LOGIN */
+#login{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #777;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    background-color: #cecece;
+    margin: 100px auto;
+    
+}
+.boxlogin{
+    width: 100%;
+/*     background-color: red; */
+    padding: 30px;
+
+}
+.boxlogin input{
+    height: 30px;
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    border-bottom: 1px solid #444;
+}
+.img{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
 }
